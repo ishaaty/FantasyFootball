@@ -7,7 +7,7 @@ X = pd.read_csv('Xdata.csv')
 y = pd.read_csv('Ydata.csv')
 
 print(X.describe())
-print(X.columns)
+print(X.head())
 
 #The bottom two lines drop the column of names from the dataset.
 Xdrop = X.drop('Names',1)
