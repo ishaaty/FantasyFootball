@@ -5,6 +5,7 @@ from sklearn.ensemble import RandomForestRegressor
 #The X and y lines below read that data you will use to train your machine learning algorithm.  Your paths will be different though.  For example, I doubt yours will have “genwal” in it.  You can find the path on Kaggle.  You must make this change on your own.
 X = pd.read_csv('Xdata.csv')
 y = pd.read_csv('Ydata.csv')
+print(X.describe())
 
 #The bottom two lines drop the column of names from the dataset.
 Xdrop = X.drop('Names',1)
